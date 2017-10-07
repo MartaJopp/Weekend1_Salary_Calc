@@ -44,11 +44,11 @@ th, td {
 }
 
 tr{
-  background-color: #f2f2f2;
+  background-color: gainsboro;
 }
 
 th {
-  background-color: #2C3852;
+  background-color: grey;
   color: white;
   font-size: 18px;
 }
