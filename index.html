@@ -10,18 +10,36 @@
   <body>
     <div id = "container">
     <header>
-    <H1>TEST</H1>
+    <H2>Salary Calculator</H2>
   </header>
     <div class = "form">
-      <input class = "employee salary" type = "text">
+      <input class = "employee first name" type = "text" id="firstName">
+      <p>First Name</p>
+      <input class = "employee last name" type = "text" id="lastName">
+      <p>Last Name</p>
+      <input class = "employee idNumber" type = "text" id="idNumber">
+      <p>Employee ID Number</p>
+      <input class = "employee salary" type = "text" id="salary">
+<p>Annual Salary</p>
+
+
 </div>
 <div class = "ButtonHere">
   <Button>Submit</button>
 </div>
 <div class = "content">
-  <div>Total Monthly Costs: <span id="Money">0</span></div>
-</div>
+  <div>Total Monthly Costs: <span id="Money"> 0 </span></div>
+  <table id = "theTable">
+<thead>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Employee ID Number</th>
+    <th>Annual Salary</th>
 
+  </tr>
+  </thead>
+</table>
 </div>
   </body>
 </html>
