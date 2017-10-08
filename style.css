@@ -20,14 +20,26 @@ h2 {
 header {
 text-align: center;
 background-color: grey;
-height: auto;
 font-size: 40PX;
 margin: 0
 }
 
 .ButtonHere {
-  alignment: center;
+  text-align: center;
   font-size: 20PX;
+}
+
+#Submit {
+  border-radius: 4px;
+  font-size: 15PX;
+  background-color: gainsboro;
+  margin-top: 10PX;
+  cursor: pointer;
+}
+
+.delete {
+  cursor: pointer;
+  text-align: center;
 }
 
 .content {
@@ -50,5 +62,5 @@ tr{
 th {
   background-color: grey;
   color: white;
-  font-size: 18px;
+  font-size: 15px;
 }
