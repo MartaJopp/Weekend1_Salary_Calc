@@ -7,7 +7,7 @@ $(document).ready(readyNow);
 function readyNow(){
 $('button').on('click', submitButtonSalary);
 $('button').on('click', addTheInputs);
-$('#delete').on('click', '.employeeData', deleteEmployees);
+//$('#delete').on('click', '.employeeData', deleteEmployees);
 
 //$('button').on('click', hopeThisWorks);
 }//end readyNow function
@@ -41,19 +41,19 @@ function addTheInputs(){
   console.log('first Name: ' + firstName);
   console.log('salary: ' + newEmployee);
 //appending to table, adding delete button
-$('#theTable').append('<tr class = "employeeData"><td>' + firstName + '</td><td>' + lastName + '</td><td>' + idNumber + '</td><td>' + jobTitle + '</td><td>' + annualSalary + '</td><td>' + '<button class = "delete">Remove</button>' + '</td></tr>');
+$('#theTable').append('<tr id = "employeeData"><td>' + firstName + '</td><td>' + lastName + '</td><td>' + idNumber + '</td><td>' + jobTitle + '</td><td>' + annualSalary + '</td><td>' + '<button class = "delete">Remove</button>' + '</td></tr>');
 //clearing the input fields
 $('.employee').val('');
 $('.delete').on('click', deleteEmployeesWithin);
 function deleteEmployeesWithin(){
-$('.employeeData').remove();
+$(this).closest('tr').remove();
 console.log('Delete Clicked');
 }
 }
 //end addTheInputs function
 
 
-function deleteEmployees(){
+/*function deleteEmployees(){
   console.log('deleteEmployees');
   $(this).remove();
 }
